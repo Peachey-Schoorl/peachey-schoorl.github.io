@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <meta charset="UTF-8">
+    <TITLE>pm5544</TITLE>
+    <script src="js/prototype-1.6.0.2.js"></script>
+    <script src="js/scriptaculous.js?load=effects"></script>
+    <script language="javacript">
+        var zap = function(){
+                var d = Math.ceil(8*Math.random());
+                var f = Math.random();
+                var p = Math.ceil(10*Math.random());
+                new  Effect.Pulsate('container', {duration:d,from: f,pulses:p});
+            }
+
+        Event.observe(window, 'load', function() {
+            var t = 3;
+            new Effect.Opacity('container', {duration:t*2, from:0.0, to:1.0});
+            //new Effect.Opacity('tv', {duration:t*2, from:0.0, to:1.0});
+            var int=self.setInterval("zap()",t*1000)
+        });
+    </script>
+    <style type="text/css">
+    	img {border:0px solid transparent;}
+    	a {text-decoration:none; color:white;}
+
+        body {
+            height:100%;
+            margin:0;
+            padding:0;
+            color:white;
+            background: #999999 url("pm5544/tv-static.gif") repeat;
+    		font-family:verdana, sans-serif;
+
+        }
+        #container {
+            width:100%;
+            position:absolute;
+            min-height:100%;
+            height:auto !important;
+            height:100%;
+            background: #999999 url("pm5544/backgrounD.GIF") repeat;
+        }
+
+        #tv {
+            position:absolute;
+            float:left;
+            width:556px;
+            height:560px;
+            left:50%;
+            top:50%;
+    		margin-left:-290px;
+    		margin-top:-280px;
+        }
+
+        #tv div {
+            position:relative;
+            float:left;
+            overflow:hidden;
+        }
+
+    .clear {margin-right:50px;}
+
+    .l7  {margin-left:7px;}
+    .l24  {margin-left:24px;}
+    .l93  {margin-left:93px;}
+
+    .w46  {width:46px;}
+
+    .w69  {width:69px;}
+    .w71  {width:71px;}
+    .w86  {width:86px;}
+    .w91  {width:91px;}
+    .w92  {width:92px;}
+    .w93  {width:93px;}
+    .w96  {width:96px;}
+    .w139 {width:139px;}
+    .w140 {width:140px;}
+    .w185 {width:185px;}
+    .w276 {width:276px;}
+
+
+    .h26  {height:26px;}
+    .h45  {height:46px;}
+    .h46  {height:46px;}
+    .h70  {height:70px;}
+    .h71  {height:71px;}
+    .h72  {height:72px;}
+    .h93  {height:93px;}
+    .h95  {height:95px;}
+    .h117 {height:117px;}
+
+    	#clock {
+    			background:#000;
+    			text-align:center;
+    			line-height:45px;
+    			font-size:14pt;
+    			overflow:hidden;
+    			height:49px;
+    			position:relative;
+    			top:-3px;
+    		}
+
+    	#link {
+    			height:46px;
+    			background:#000;
+    			font-size:10pt;
+    			line-height:46px;
+    			text-align:center;
+    			overflow:hidden;
+    		}
+    </style>
+</HEAD>
+<BODY>
+<div id="container">
+  <div id="tv">
+
+    <div class="w95  h72 l93"><IMG src="pm5544/1A.GIF" width=91 height=72 alt="Hi! "></div>
+    <div class="w185 h72">
+    	<IMG src="pm5544/1B.GIF" width=186 alt="Welcome ">
+    	<div class="w185 h45" id="clock">&nbsp;</div>
+	</div>
+    <div class="w96  h72 clear"><IMG src="pm5544/1C.GIF" width=91 height=72 alt="to"></div>
+
+    <div class="w69 h93 l24"><IMG src="pm5544/2A.GIF" width=69 height=93 alt="the "></div>
+    <div class="w93 h93 "><IMG src="pm5544/2B.GIF" width=93 height=93 alt="Peachey-Schoorl "></div>
+    <div class="w93 h93"><IMG src="pm5544/2C.GIF" width=93 height=93 alt="website. "></div>
+    <div class="w93 h93"><IMG src="pm5544/2D.GIF" width=93 height=93 alt="There "></div>
+    <div class="w93 h93"><IMG src="pm5544/2E.GIF" width=93 height=93 alt="is "></div>
+    <div class="w71 h93"><IMG src="pm5544/2F.GIF" width=71 height=93 alt="nothing "></div>
+
+	<div class="w93 h91"><IMG src="pm5544/3A.GIF" name="IMG_a" OnMouseOver="document.IMG_a.src='pm5544/3AI.GIF';" OnMouseOut="document.IMG_a.src='pm5544/3A.GIF';" alt="here "></div>
+	<div class="w92 h91"><IMG src="pm5544/3B.GIF" name="IMG_b" OnMouseOver="document.IMG_b.src='pm5544/3BI.GIF';" OnMouseOut="document.IMG_b.src='pm5544/3B.GIF';" alt="right "></div>
+	<div class="w93 h91"><IMG src="pm5544/3C.GIF" name="IMG_c" OnMouseOver="document.IMG_c.src='pm5544/3CI.GIF';" OnMouseOut="document.IMG_c.src='pm5544/3C.GIF';" alt="now, "></div>
+	<div class="w93 h91"><IMG src="pm5544/3D.GIF" name="IMG_d" OnMouseOver="document.IMG_d.src='pm5544/3DI.GIF';" OnMouseOut="document.IMG_d.src='pm5544/3D.GIF';" alt="so "></div>
+	<div class="w92 h91"><IMG src="pm5544/3E.GIF" name="IMG_e" OnMouseOver="document.IMG_e.src='pm5544/3EI.GIF';" OnMouseOut="document.IMG_e.src='pm5544/3E.GIF';" alt="why "></div>
+	<div class="w93 h91"><IMG src="pm5544/3F.GIF" name="IMG_f" OnMouseOver="document.IMG_f.src='pm5544/3FI.GIF';" OnMouseOut="document.IMG_f.src='pm5544/3F.GIF';" alt="don't "></div>
+
+    <div class="w93 h91"><IMG src="pm5544/4A.GIF" alt="you "></div>
+    <div class="w92 h91"><IMG src="pm5544/4B.GIF" alt="go "></div>
+    <div class="w93 h91"><IMG src="pm5544/4C.GIF" alt="watch "></div>
+    <div class="w93 h91"><IMG src="pm5544/4D.GIF" alt="some "></div>
+    <div class="w92 h91"><IMG src="pm5544/4E.GIF" alt="TV "></div>
+    <div class="w93 h91"><IMG src="pm5544/4F.GIF" alt="instead, "></div>
+
+    <div class="w86 h95 l7"><IMG src="pm5544/5A.GIF" alt="hmmmm? "></div>
+    <div class="w92 h95"><IMG src="pm5544/5B.GIF" alt="Maybe "></div>
+    <div class="w93 h95"><IMG src="pm5544/5C.GIF" alt="later "></div>
+    <div class="w93 h95"><IMG src="pm5544/5D.GIF" alt="we'll "></div>
+    <div class="w92 h95"><IMG src="pm5544/5E.GIF" alt="put "></div>
+    <div class="w86 h95"><IMG src="pm5544/5F.GIF" alt="something "></div>
+
+    <div class="w140 h117"><IMG src="pm5544/6A.GIF" alt="here."></div>
+    <div class="w276 h117">
+    	<div class="w276 h46"id="link">http://peachey-schoorl.com/</div>
+    	<IMG src="pm5544/6B.GIF" width=278 height=71  alt="Bye ">
+	</div>
+    <div class="w140 h117"><IMG src="pm5544/6C.GIF" alt="bye!"></div>
+
+  </div>
+</div>
+
+<script language="javascript">
+<!--
+$('container').setOpacity(0);
+function GetTime() {
+ var dt = new Date();
+ var def = dt.getTimezoneOffset()/60;
+ var gmt = (dt.getHours() + def);
+ var ending = ":" + IfZero(dt.getMinutes()) + ":" +  IfZero(dt.getSeconds());
+ var NL = check24(((gmt + 2) > 24) ? ((gmt + 2) - 24) : (gmt + 2));
+ document.getElementById('clock').innerHTML=(' '+ IfZero(NL) + ending +' ');
+ setTimeout("GetTime()", 1000);
+}
+
+function IfZero(num) {
+ return ((num <= 9) ? ("0" + num) : num);
+ }
+ function check24(hour) {
+ return (hour >= 24) ? hour - 24 : hour;
+}
+
+function Clock(){
+ if (document.all)
+ setInterval("GetTime()",1000)
+}
+
+if (!document.all)
+GetTime()
+window.onload=Clock
+-->
+</script>
+</BODY>
+</HTML>
